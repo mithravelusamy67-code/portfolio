@@ -1,10 +1,10 @@
 script.js
 
-// Get the navigation elements
+
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-// Open and close the mobile menu
+
 menuToggle.addEventListener("click", function () {
     const isOpen = navLinks.classList.toggle("open");
 
@@ -17,7 +17,7 @@ menuToggle.addEventListener("click", function () {
     menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
-// Close the mobile menu after clicking a navigation link
+
 document.querySelectorAll(".nav-links a").forEach(function (link) {
     link.addEventListener("click", function () {
         navLinks.classList.remove("open");
@@ -27,11 +27,11 @@ document.querySelectorAll(".nav-links a").forEach(function (link) {
     });
 });
 
-// Automatically display the current year in the footer
+
 document.getElementById("current-year").textContent =
     new Date().getFullYear();
 
-// Back-to-top button
+
 const backToTop = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", function () {
@@ -49,7 +49,7 @@ backToTop.addEventListener("click", function () {
     });
 });
 
-// Highlight the current section in the navigation
+
 const sections = document.querySelectorAll("main section[id]");
 const navigationLinks = document.querySelectorAll(".nav-links a");
 
